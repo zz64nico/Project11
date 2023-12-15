@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_txt"
+                android:layout_margin="@dimen/dp_20"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tz"
+                android:layout_margin="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_20"
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.example.note_kotlin.widget.CircleImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_15"
+                android:id="@+id/imh_head"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"/>
+            <LinearLayout
+                android:layout_margin="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Jone"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/login_input_bg"
+                    android:id="@+id/tv_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="Smith"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/login_input_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/baseline_check_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="@dimen/dp_10"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_time"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_20"
+            android:text="Login in"
+            android:id="@+id/tv_loginIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>
